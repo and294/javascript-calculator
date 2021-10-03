@@ -1,0 +1,118 @@
+body {
+  height: 100%;
+  background:  #ca9dfa; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+}
+
+#calculator {
+  display: inline-block;
+ background: rgb(82,72,251);
+background: linear-gradient(177deg, rgba(82,72,251,0.5) 0%, rgba(150,150,255,1) 33%, rgba(223,250,255,1) 100%);
+  height: 500px;
+  width: 450px;
+  left: 50%;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 4px 1px 3px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 4px 1px 3px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 4px 1px 3px 1px rgba(0,0,0,0.5);
+box-shadow: 2px 5px 3px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 2px 5px 3px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 2px 5px 3px 1px rgba(0,0,0,0.5);  
+#screen {
+  
+  background-color:  #252525;
+  font-size: 20px;
+  color: white;
+  height: 100px;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: right;
+  word-wrap: break-word;
+  #display {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+  
+  button {
+    height: 80px;
+    font-size: 40px;
+    border-radius: 5px;
+    border-color: darken(#99a6a8, 5%);
+    background: white;
+    color: black;
+  }
+
+.numberPads {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin-top: 20px;
+
+} 
+#equals {
+    background-color:  #3d6bfe;
+    color: white;
+    border-color: darken(#3d6bfe, 5%);
+    height: 100%;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 5;
+  } 
+ #clear {
+   background-color: #ff2727;
+   color: white;
+   border-color: darken(#ff2727, 5%);
+   width: 100%;
+   grid-column-start: 4;
+   grid-column-end: 6;
+} 
+  #zero {
+    width: 100%;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #decimal {
+    grid-row-start: 4;
+    grid-column-start: 3;
+  }
+  #subtract {
+    grid-column-start: 4;
+    background: darken(#99a6a8, 40%);
+    color: white;
+    border-color: darken(#99a6a8, 45%);  
+  }
+  #add {
+   background: darken(#99a6a8, 40%);
+   color: white; 
+   border-color: darken(#99a6a8, 45%); 
+  }
+  #divide {
+   background: darken(#99a6a8, 40%);
+   color: white; 
+   border-color: darken(#99a6a8, 45%); 
+  }
+  #multiply {
+   background: darken(#99a6a8, 40%);
+   color: white; 
+   border-color: darken(#99a6a8, 45%); 
+  }
+}
+  
+
+
